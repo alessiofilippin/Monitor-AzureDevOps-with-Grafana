@@ -48,15 +48,18 @@ __you can find an example json file in this repo - search for dashboard_template
 
 For example:
 
-__Get details about the executed tests__
+> __Get details about the executed tests__
 
-![Capture1](https://user-images.githubusercontent.com/47082128/174772332-e2982cfc-25df-476d-a1ea-da1a3f54b16b.PNG)
+![Capture1](https://user-images.githubusercontent.com/47082128/174775242-fc80ece1-58d1-40b9-9290-e29fd833b493.PNG)
 
-__Insights about the waiting times in the queue and agent pools which they wait the most.__
+> __Insights about the waiting times in the queue and agent pools which they wait the most.__
 
 ![Capture2](https://user-images.githubusercontent.com/47082128/174772692-3528b051-f825-4a88-94e4-6dff64366c27.PNG)
 
-__Insights about the execution times and agent pools which they have the bigger execution time.__
+> __Insights about the execution times and agent pools which they have the bigger execution time.__
 
 ![Capture3](https://user-images.githubusercontent.com/47082128/174773015-bd0e94e6-b1c4-48fc-a16a-9c39d56358a4.PNG)
 
+
+
+__hopefully this can help you in kickstart your AzureDevOps monitoring and create even more complex dashboards :) Thank you!__
