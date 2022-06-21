@@ -1,18 +1,18 @@
 # Monitor-AzureDevOps-with-Grafana
 
-Azure DevOps is the tool of choice from Microsoft to administer your DevOps workflow: from Tasks to CI/CD to Tests.
+Azure DevOps is Microsoft's go-to tool for managing your DevOps workflow from tasks to CI/CDs and tests.
 
-It does have a huge choice of features and out-of-the-box functionalites. Unfortunatly, it does lack of a proper way to set up monitoring or analytics around your Azure DevOps Org.
+It has an enormous selection of out-of-the-box features and functionality.Unfortunately, there is no proper way to set up monitoring or analysis around your Azure DevOps organisation.
 
 One way to monitor Azure DevOps is to create custom dashboards for it using the widgets (https://docs.microsoft.com/en-us/azure/devops/report/dashboards/overview?view=azure-devops) - this is a good solution but the widget are limited and some of the most valuable informations are accessible only trough the APIs.
 
 # Solution?
 
-For enhance the monitoring capabilities of Azure DevOps, I tried to place Grafana on top of it. __Grafana__ is a well know visualization tool, it's openSource and it does have hundreds of features ... also, it does make some good looking kickass dashboards.
+To enhance the monitoring capabilities of Azure DevOps, I tried to place Grafana on top of it. __Grafana__ is a well-known visualization tool, it's openSource and it's got hundreds of features ... also, it does some nice kick dashboards.
 
 ## Requirments
 
-1) Grafana Installaed somewhere as PaaS or on a VM.
+1) Grafana installed somewhere as PaaS or on a VM.
 2) Connectivity from Grafana to Azure DevOps.
 3) A User with read access to Azure DevOps.
 4) Install the "infinity" plugin for Grafana. (https://grafana.com/grafana/plugins/yesoreyeram-infinity-datasource/)
@@ -29,7 +29,7 @@ __We are going to use the infinity plugin for Grafana, this plugin allow us to s
 
 ### 2) Create a PAT for the Azure DevOps user / SP
 
-__The PAT requires only read access to all the resources on Azure DevOps__
+__The PAT requires read only access to all the resources on Azure DevOps__
 
 ![image](https://user-images.githubusercontent.com/47082128/174771029-461118f0-07d1-4696-8b35-7a1efe6908a0.png)
 
@@ -41,10 +41,10 @@ __use the PAT as password__
 
 ### 4) Create your dashboards!
 
-it's now possible scrape any azuredevops API url in your org and retrieve any kind of info that you require.
+it's now possible to scrape any AzureDevOps API url in your org and retrieve any kind of info that you might require.
 This is the reference to the AzureDevOps API docs (https://docs.microsoft.com/en-us/rest/api/azure/devops/?view=azure-devops-rest-7.1)
 
-__you can find an example json file in this repo__
+__you can find an example json file in this repo - search for dashboard_template.json (replace the "SUB_ID" with your subscription ID)__
 
 For example:
 
